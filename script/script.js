@@ -46,7 +46,7 @@ titletres.addEventListener("click", mostrarTres);
 const error = document.getElementById("error");
 
 function validar(correo) {
-   var expReg =
+   let expReg =
       /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
 
    let valido = expReg.test(correo);
