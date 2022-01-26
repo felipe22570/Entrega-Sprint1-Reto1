@@ -42,3 +42,18 @@ function mostrarTres() {
 titleuno.addEventListener("click", mostrarUno);
 titledos.addEventListener("click", mostrarDos);
 titletres.addEventListener("click", mostrarTres);
+
+const error = document.getElementById("error");
+
+function validar(correo) {
+   var expReg =
+      /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
+
+   let valido = expReg.test(correo);
+
+   if (valido == false) {
+      error.style.display = "flex";
+   } else {
+      error.style.display = "none";
+   }
+}

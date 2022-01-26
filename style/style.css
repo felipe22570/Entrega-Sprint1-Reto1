@@ -276,6 +276,10 @@
    gap: 20px;
 }
 
+#sec-form-input button {
+   height: 40px;
+}
+
 #sec-form-input input {
    width: 350px;
 }

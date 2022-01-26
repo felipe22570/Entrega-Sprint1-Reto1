@@ -351,7 +351,7 @@
          <form id="sec-form-input">
             <div id="verification">
                <input
-                  type="email"
+                  type="text"
                   class="form-control"
                   id="correo"
                   placeholder="Enter your email address"
@@ -360,7 +360,13 @@
                   <span>Whoops, make sure it's an email</span>
                </div>
             </div>
-            <button type="submit" class="btn btn-danger">Contact us</button>
+            <button
+               type="button"
+               class="btn btn-danger"
+               onclick="validar(document.getElementById('correo').value)"
+            >
+               Contact us
+            </button>
          </form>
       </section>
 
